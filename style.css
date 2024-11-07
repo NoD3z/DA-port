@@ -64,6 +64,13 @@ h1, h2 {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+#powerbi-simulation {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
 footer {
     background-color: #35424a;
     color: #ffffff;
