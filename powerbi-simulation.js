@@ -14,13 +14,14 @@ document.addEventListener('DOMContentLoaded', function() {
     chart.style.height = '200px';
     chart.style.padding = '20px';
     chart.style.backgroundColor = '#f0f0f0';
+    chart.style.border = '1px solid black';
 
     data.forEach(item => {
         const bar = document.createElement('div');
         bar.style.width = '40px';
         bar.style.marginRight = '10px';
         bar.style.backgroundColor = '#0078D4';
-        bar.style.height = `${item.performance}%`;
+        bar.style.height = `${item.performance}px`;
         bar.title = `${item.month}: ${item.performance}%`;
 
         const label = document.createElement('div');
