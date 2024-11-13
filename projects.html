@@ -19,35 +19,126 @@
         <section class="project">
             <h2>Multiplatform Device Management Application</h2>
             <p>Developed a JavaScript Node.js application to facilitate maintenance and monitoring of tech devices. This project improved efficiency in tracking device movement in and out of the building.</p>
+            <details>
+                <summary>Skills & Knowledge</summary>
+                <ul>
+                    <li>JavaScript and Node.js</li>
+                    <li>RESTful API design</li>
+                    <li>Database management</li>
+                    <li>Network protocols (HTTP/HTTPS)</li>
+                    <li>IT asset management</li>
+                    <li>Troubleshooting hardware and software issues</li>
+                </ul>
+            </details>
         </section>
         <section class="project">
             <h2>Parts Tracking Mobile App</h2>
             <p>Created a mobile application using .NET MAUI and C# for efficient querying and tracking of parts in stores, showcasing practical inventory management solutions.</p>
+            <details>
+                <summary>Skills & Knowledge</summary>
+                <ul>
+                    <li>C# programming</li>
+                    <li>.NET MAUI framework</li>
+                    <li>XAML for UI design</li>
+                    <li>RESTful API consumption</li>
+                    <li>JSON data handling</li>
+                    <li>Asynchronous programming</li>
+                    <li>Mobile network configurations</li>
+                    <li>Secure data transmission</li>
+                </ul>
+            </details>
+            <details>
+                <summary>Implementation Steps</summary>
+                <ol>
+                    <li>Set up development environment with Visual Studio and .NET MAUI workload</li>
+                    <li>Create new .NET MAUI project and design UI using XAML</li>
+                    <li>Implement HttpClient for API calls</li>
+                    <li>Use dependency injection for ApiService lifecycle management</li>
+                    <li>Implement error handling and loading states</li>
+                    <li>Test app on various platforms (Android, iOS, Windows)</li>
+                </ol>
+            </details>
         </section>
         <section class="project">
             <h2>Equipment Audit Analysis</h2>
             <p>Conducted comprehensive equipment audits using statistical calculations to analyse usage and efficiency, demonstrating data analysis skills in a business context.</p>
+            <details>
+                <summary>Skills & Knowledge</summary>
+                <ul>
+                    <li>Data analysis techniques</li>
+                    <li>Statistical analysis</li>
+                    <li>Spreadsheet software (Excel)</li>
+                    <li>Data visualization</li>
+                    <li>Equipment lifecycles and maintenance schedules</li>
+                    <li>Presenting technical data to non-technical stakeholders</li>
+                </ul>
+            </details>
         </section>
         <section class="project">
             <h2>Cybersecurity Data Analysis</h2>
             <p>Analysed security log data to identify patterns and potential threats, applying data analysis skills in the IT security domain.</p>
+            <details>
+                <summary>Skills & Knowledge</summary>
+                <ul>
+                    <li>Cybersecurity principles</li>
+                    <li>Common attack vectors and vulnerabilities</li>
+                    <li>Data analysis and pattern recognition</li>
+                    <li>SIEM tools</li>
+                    <li>Basic scripting for log analysis (Python, PowerShell)</li>
+                    <li>Network-based threat detection</li>
+                    <li>Endpoint security</li>
+                </ul>
+            </details>
         </section>
         <section class="project">
             <h2>Work Instructions and Procedures Documentation</h2>
             <p>Authored detailed work instructions and procedures, improving process standardisation and efficiency across the organisation.</p>
+            <details>
+                <summary>Skills & Knowledge</summary>
+                <ul>
+                    <li>Technical writing</li>
+                    <li>Process mapping and flowchart creation</li>
+                    <li>Knowledge management principles</li>
+                    <li>Documentation tools (e.g., Confluence, SharePoint)</li>
+                    <li>Standardizing procedures</li>
+                    <li>Creating training resources</li>
+                </ul>
+            </details>
         </section>
-<section class="project">
-    <h2>Power BI Dashboard: Cybersecurity Threat Intelligence</h2>
-    <p>Developed a comprehensive Power BI dashboard to visualize potential security threats, attack vectors, and vulnerability assessments, enabling data-driven security management and risk analysis.</p>
-    <div id="powerbi-simulation">
-        <!-- Power BI simulation will be inserted here -->
-    </div>
-</section>
+        <section class="project">
+            <h2>Power BI Dashboard: Cybersecurity Threat Intelligence</h2>
+            <p>Developed a comprehensive Power BI dashboard to visualize potential security threats, attack vectors, and vulnerability assessments, enabling data-driven security management and risk analysis.</p>
+            <details>
+                <summary>Skills & Knowledge</summary>
+                <ul>
+                    <li>Power BI desktop and service</li>
+                    <li>DAX (Data Analysis Expressions)</li>
+                    <li>Data modeling and relationship management</li>
+                    <li>SQL for data querying</li>
+                    <li>Cybersecurity metrics and KPIs</li>
+                    <li>Creating intuitive, interactive dashboards</li>
+                </ul>
+            </details>
+            <div id="powerbi-simulation">
+                <!-- Power BI simulation will be inserted here -->
+            </div>
         </section>
     </main>
     <footer>
         <p>&copy; 2024 Dennis Isibor</p>
     </footer>
     <script src="powerbi-simulation.js"></script>
+    <script>
+        // Add this script to make details elements interactive
+        document.querySelectorAll('details').forEach((el) => {
+            el.addEventListener('toggle', (e) => {
+                if (e.target.open) {
+                    document.querySelectorAll('details').forEach((el2) => {
+                        if (el2 !== e.target) el2.open = false;
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
