@@ -22,12 +22,12 @@
             <details>
                 <summary>Skills & Knowledge</summary>
                 <ul>
-                    <li>JavaScript and Node.js</li>
-                    <li>RESTful API design</li>
-                    <li>Database management</li>
-                    <li>Network protocols (HTTP/HTTPS)</li>
-                    <li>IT asset management</li>
-                    <li>Troubleshooting hardware and software issues</li>
+                    <li class="skills-badge">JavaScript</li>
+                    <li class="skills-badge">Node.js</li>
+                    <li class="skills-badge">RESTful API</li>
+                    <li class="skills-badge">Database Management</li>
+                    <li class="skills-badge">Network Protocols</li>
+                    <li class="skills-badge">IT Asset Management</li>
                 </ul>
             </details>
         </section>
@@ -37,14 +37,12 @@
             <details>
                 <summary>Skills & Knowledge</summary>
                 <ul>
-                    <li>C# programming</li>
-                    <li>.NET MAUI framework</li>
-                    <li>XAML for UI design</li>
-                    <li>RESTful API consumption</li>
-                    <li>JSON data handling</li>
-                    <li>Asynchronous programming</li>
-                    <li>Mobile network configurations</li>
-                    <li>Secure data transmission</li>
+                    <li class="skills-badge">C#</li>
+                    <li class="skills-badge">.NET MAUI</li>
+                    <li class="skills-badge">RESTful API</li>
+                    <li class="skills-badge">XAML</li>
+                    <li class="skills-badge">JSON</li>
+                    <li class="skills-badge">Async Programming</li>
                 </ul>
             </details>
             <details>
@@ -65,12 +63,10 @@
             <details>
                 <summary>Skills & Knowledge</summary>
                 <ul>
-                    <li>Data analysis techniques</li>
-                    <li>Statistical analysis</li>
-                    <li>Spreadsheet software (Excel)</li>
-                    <li>Data visualization</li>
-                    <li>Equipment lifecycles and maintenance schedules</li>
-                    <li>Presenting technical data to non-technical stakeholders</li>
+                    <li class="skills-badge">Data Analysis</li>
+                    <li class="skills-badge">Statistics</li>
+                    <li class="skills-badge">Excel</li>
+                    <li class="skills-badge">Data Visualization</li>
                 </ul>
             </details>
         </section>
@@ -80,13 +76,10 @@
             <details>
                 <summary>Skills & Knowledge</summary>
                 <ul>
-                    <li>Cybersecurity principles</li>
-                    <li>Common attack vectors and vulnerabilities</li>
-                    <li>Data analysis and pattern recognition</li>
-                    <li>SIEM tools</li>
-                    <li>Basic scripting for log analysis (Python, PowerShell)</li>
-                    <li>Network-based threat detection</li>
-                    <li>Endpoint security</li>
+                    <li class="skills-badge">Cybersecurity</li>
+                    <li class="skills-badge">Threat Analysis</li>
+                    <li class="skills-badge">Python</li>
+                    <li class="skills-badge">SIEM</li>
                 </ul>
             </details>
         </section>
@@ -96,12 +89,9 @@
             <details>
                 <summary>Skills & Knowledge</summary>
                 <ul>
-                    <li>Technical writing</li>
-                    <li>Process mapping and flowchart creation</li>
-                    <li>Knowledge management principles</li>
-                    <li>Documentation tools (e.g., Confluence, SharePoint)</li>
-                    <li>Standardizing procedures</li>
-                    <li>Creating training resources</li>
+                    <li class="skills-badge">Technical Writing</li>
+                    <li class="skills-badge">Process Mapping</li>
+                    <li class="skills-badge">Knowledge Management</li>
                 </ul>
             </details>
         </section>
@@ -111,17 +101,13 @@
             <details>
                 <summary>Skills & Knowledge</summary>
                 <ul>
-                    <li>Power BI desktop and service</li>
-                    <li>DAX (Data Analysis Expressions)</li>
-                    <li>Data modeling and relationship management</li>
-                    <li>SQL for data querying</li>
-                    <li>Cybersecurity metrics and KPIs</li>
-                    <li>Creating intuitive, interactive dashboards</li>
+                    <li class="skills-badge">Power BI</li>
+                    <li class="skills-badge">DAX</li>
+                    <li class="skills-badge">SQL</li>
+                    <li class="skills-badge">Cybersecurity Metrics</li>
                 </ul>
             </details>
-            <div id="powerbi-simulation">
-                <!-- Power BI simulation will be inserted here -->
-            </div>
+            <div id="powerbi-simulation"></div>
         </section>
     </main>
     <footer>
@@ -129,7 +115,6 @@
     </footer>
     <script src="powerbi-simulation.js"></script>
     <script>
-        // Add this script to make details elements interactive
         document.querySelectorAll('details').forEach((el) => {
             el.addEventListener('toggle', (e) => {
                 if (e.target.open) {
