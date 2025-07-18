@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mini Game - Guess the Number</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      .game-container {
+        background: #fff;
+        border-radius: 1em;
+        max-width: 400px;
+        margin: 2em auto;
+        padding: 2em;
+        box-shadow: 0 6px 36px rgba(44,62,80,0.07);
+        text-align: center;
+      }
+      .game-input {
+        font-size: 1.1em;
+        padding: 0.5em;
+        width: 120px;
+        margin-bottom: 1em;
+      }
+      .game-btn {
+        background: #3498db;
+        color: #fff;
+        padding: 0.5em 1.2em;
+        border: none;
+        border-radius: 6px;
+        font-size: 1em;
+        cursor: pointer;
+        margin-left: 1em;
+      }
+      .game-btn:hover {
+        background: #2980b9;
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="minigame.html">Mini Game</a>
+        </nav>
+    </header>
+    <main>
+        <div class="game-container">
+            <h1>Guess the Number!</h1>
+            <p>I'm thinking of a number between <b>1 and 20</b>. Can you guess it?</p>
+            <input class="game-input" id="guessInput" type="number" min="1" max="20" />
+            <button class="game-btn" onclick="makeGuess()">Guess</button>
+            <button class="game-btn" onclick="resetGame()">Reset</button>
+            <p id="gameMessage"></p>
+            <p id="tries"></p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Dennis Isibor</p>
+    </footer>
+    <script>
+      let number = Math.floor(Math.random()*20) + 1;
+      let attempts = 0;
+      function makeGuess() {
+        const input = document.getElementById('guessInput');
+        const val = parseInt(input.value, 10);
+        let msg = '';
+        attempts++;
+        if (isNaN(val) || val < 1 || val > 20) {
+          msg = "⛔ Please enter a number from 1 to 20.";
+        } else if (val === number) {
+          msg = `🎉 Correct! The number was ${number}. You guessed it in ${attempts} tries!`;
+        } else if (val < number) {
+          msg = "🔻 Too low! Try again.";
+        } else if (val > number) {
+          msg = "🔺 Too high! Try again.";
+        }
+        document.getElementById('gameMessage').textContent = msg;
+        document.getElementById('tries').textContent = attempts > 0 ? `Attempts: ${attempts}` : '';
+        if (val === number) input.disabled = true;
+      }
+      function resetGame() {
+        number = Math.floor(Math.random()*20) + 1;
+        attempts = 0;
+        document.getElementById('gameMessage').textContent = '';
+        document.getElementById('tries').textContent = '';
+        document.getElementById('guessInput').value = '';
+        document.getElementById('guessInput').disabled = false;
+      }
+    </script>
+</body>
+</html>
