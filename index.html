@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dennis Isibor - Data Analyst Portfolio</title>
+    <!-- Typed.js for typing effect -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 <body>
     <header>
@@ -15,23 +17,39 @@
         </nav>
     </header>
     <main>
-        <h1>Dennis Isibor</h1>
-        <h2>Data & Tech Professional</h2>
-        <div class="awards">
-            <p>🏆 <strong>Multiple Award Winner in ICT</strong></p>
-            <ul>
-                <li><strong>BCS The Chartered Institute for IT Award 2025</strong></li>
-                <li><strong>NowSkills Apprentice of the Year</strong></li>
-            </ul>
-        </div>
-        <p>Benvenuto! Welcome to my portfolio. I'm a data-driven professional with a unique blend of biomedical science background and IT expertise.</p>
-        <div class="cta-buttons">
-            <a href="about.html" class="cta-button">Learn More About Me</a>
-            <a href="projects.html" class="cta-button">View My Projects</a>
-        </div>
+        <section class="hero">
+            <h1>Dennis Isibor</h1>
+            <h2 class="typing-effect"></h2>
+            <div class="awards award-glow">
+                <p>🏆 <strong>Multiple Award Winner in ICT</strong></p>
+                <ul>
+                    <li><strong>BCS The Chartered Institute for IT Award 2025</strong></li>
+                    <li><strong>NowSkills Apprentice of the Year</strong></li>
+                </ul>
+            </div>
+            <p>Benvenuto! Welcome to my portfolio. I'm a data-driven professional with a unique blend of biomedical science background and IT expertise.</p>
+            <div class="cta-buttons">
+                <a href="about.html" class="cta-button">Learn More About Me</a>
+                <a href="projects.html" class="cta-button">View My Projects</a>
+            </div>
+        </section>
     </main>
     <footer>
         <p>&copy; 2024 Dennis Isibor</p>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            new Typed('.typing-effect', {
+                strings: [
+                    'Data & Tech Professional',
+                    'Award Winning Analyst',
+                    'Full-Stack Explorer'
+                ],
+                typeSpeed: 65,
+                backSpeed: 30,
+                loop: true
+            });
+        });
+    </script>
 </body>
 </html>
