@@ -1,3 +1,26 @@
+/* ACHIEVEMENT BADGES & QUOTE */
+.badges {
+    margin-bottom: 1em;
+}
+.badge {
+    background: #ffe066;
+    color: #503406;
+    border-radius: 999px;
+    padding: 0.35em 1em;
+    margin-right: 0.6em;
+    font-weight: bold;
+    font-size: 1em;
+    display: inline-block;
+}
+.personal-quote {
+    font-style: italic;
+    color: #2980b9;
+    margin: 1em 0;
+    padding-left: 1.2em;
+    border-left: 4px solid #b2f2bb;
+}
+
+/* MAIN STYLES */
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
