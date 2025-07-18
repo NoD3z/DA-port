@@ -12,17 +12,24 @@
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="projects.html">Projects</a>
+            <a href="minigame.html">Mini Game</a>
         </nav>
     </header>
     <main>
         <h1>About Me</h1>
+        <blockquote class="personal-quote">
+            "Turning data into insight and innovation."
+        </blockquote>
+        <div class="badges">
+            <span class="badge">🏆 BCS IT Award 2025</span>
+            <span class="badge">🎓 NowSkills Apprentice of the Year</span>
+        </div>
         <div class="about-flex">
             <img 
               src="https://avataaars.io/?avatarStyle=Circle&topType=ShortHairTheCaesarSidePart&accessoriesType=Blank&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=Gray02&eyeType=Happy&eyebrowType=DefaultNatural&mouthType=Smile&skinColor=Brown" 
               alt="Avatar of Dennis Isibor" 
               class="profile-photo avatar-img" 
             />
-
             <section id="background">
                 <h2>Background</h2>
                 <p>With a unique blend of international experience and diverse technical skills, I bring a multifaceted approach to Software Development. My journey from Italy to the UK has honed my adaptability and cross-cultural communication skills, enabling me to thrive in global teams. Fluent in Italian and English, I leverage my biomedical science background from Leeds Beckett University to bring a scientific rigor to data interpretation.</p>
@@ -65,9 +72,27 @@
                 <div class="skill-bar" style="width: 80%"></div>
             </div>
         </section>
+        <section id="fun-facts" class="card">
+            <h2>Fun Facts</h2>
+            <ul>
+                <li>Bilingual: English & Italian</li>
+                <li>Enjoys hackathons and tech meetups</li>
+                <li>Loves hiking and digital art</li>
+            </ul>
+        </section>
     </main>
     <footer>
         <p>&copy; 2024 Dennis Isibor</p>
     </footer>
+    <!-- Animated skill bars JS -->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.skill-bar').forEach(bar => {
+          const width = bar.style.width;
+          bar.style.width = '0';
+          setTimeout(() => { bar.style.transition = 'width 1.3s'; bar.style.width = width; }, 300);
+        });
+      });
+    </script>
 </body>
 </html>
